@@ -1,0 +1,17 @@
+{
+  "name": "naija-tickets-partner-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lagos Events Demo — an isolated Naija Tickets sandbox partner website",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local scripts/dev.mjs",
+    "start": "node --env-file-if-exists=.env.local scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:sandbox": "node --env-file-if-exists=.env.local scripts/check-sandbox.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
